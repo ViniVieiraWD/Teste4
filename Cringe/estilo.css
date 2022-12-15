@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* A verdadeira dúvida escondida nesse código: "por que?" */
+
+*{
+padding: 0px;
+margin: 0px;
+}
+
+:root{
+    --banner-color: #080808;
+    --back-color: #1d1d1d;
+    --in-color: #1d1d1d;
+    --font-color: white;
+    --in-int-color: #2b2a2a;
+    --nav-hover-color: #ffffff50;
+
+}
+
+.light-theme{
+    --banner-color: #f3f3f3;
+    --back-color: #ffffff;
+    --in-color: white;
+    --font-color: rgb(0, 0, 0);
+    --in-int-color: #dadada;
+    --nav-hover-color: #20202050;
+
+}
+
+body {
+    margin: 0px;
+    background-color: var(--in-color);
+    background-image: url(/imagens/fundo.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+header {
+    position: relative;
+    overflow: hidden;
+    max-height: 90px;
+    min-width: 380px;
+    box-shadow: 0px 1px rgb(0, 0, 0);
+    background-color: var(--banner-color);
+}
+
+header h1{
+    padding-top: 12px;
+    font-size: 40px;
+    text-align:center;
+    color: var(--font-color);
+}
+
+header picture {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: right;
+}
+
+nav a {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--font-color);
+    border-radius: 6px;
+    transition: 150px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-color);
+    transition: 150ms;
+}
+
+nav a.hell::after {
+    content: '\00A0\P';
+}
+nav a.hell:hover::after {
+    content: '\00A0\L';
+}
+
+
+/*Principal*/
+
+
+main {
+    display: flex;
+    position: relative;
+    min-width: 600px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--in-color);
+    margin-top: 1px;
+    margin-bottom: 7px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--font-color);
+}
+
+div.busca {
+    min-width: 320px;
+    max-width: 700px;
+    margin: 0px 0px 0px 0%;
+    padding: 10px;
+    background-color: var(--in-color);
+    
+    border-radius: 7px;
+}
+
+div.busca p, div.busca h2 {
+    position: relative;
+    text-align: justify;
+}
+
+div.busca a {
+    display: block;
+    text-decoration: none;
+}
+
+div.paginas {
+    border-style: solid;
+    border: 4px;
+    border-color: black;
+    background-color: var(--in-color);
+    margin: 10px 0px;
+    border: 1px solid black;
+}
+div.paginas:hover {
+    background-color: var(--in-int-color);
+}
+
+div.paginas a{
+    display: flex;
+    flex-direction: row;
+}
+
+div.txt {
+    margin-top: 20px;
+    color: var(--font-color);
+    text-decoration: none;
+    padding: 5px;
+    text-decoration: none;
+}
+/*aside*/
+aside {
+    max-width: 200px;
+    background-color: rgb(255, 147, 147);
+    padding: 10px;
+    margin-top: 20%;
+    margin-left: 40px;
+    border: 30px;
+    border-color: rgb(223, 62, 62);
+    border-radius: 7px;
+}
+aside p {
+    text-align: justify;
+    margin-bottom: 6px;
+}
+aside h1 {
+    color: black;
+}
+aside > img#awua {
+    margin: 6px auto 0px 18px;
+    border-radius: 7px;
+}
+
+/* ads */
+div#adv{
+    max-width: 195px;
+    background-color: #acff93;
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 40px;
+    margin-bottom: 20%;
+    border-color: #4ad121;
+    border-radius: 7px;
+    border-style:solid;
+    cursor: pointer;
+}
+
+img.ads {
+    margin: 0px auto 3px 35px;
+    border-radius: 7px; 
+}
+div#adv > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#adv > p {
+    text-align: center;
+}
