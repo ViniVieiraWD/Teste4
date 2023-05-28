@@ -2,6 +2,10 @@
 
 /* A verdadeira dúvida escondida nesse código: "por que?" */
 
+@font-face {
+    font-family: amongtitle;
+    src: url(AmongUs-Regular.ttf);
+}
 *{
 padding: 0px;
 margin: 0px;
@@ -51,6 +55,7 @@ header h1{
     font-size: 40px;
     text-align:center;
     color: var(--font-color);
+    font-family: amongtitle;
 }
 
 header picture {
