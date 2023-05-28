@@ -26,11 +26,11 @@
         <div class="busca">
             <h1 class="mude">Início</h1>
 
-                <div class="paginas"><a href="">
+                <div class="paginas"><a href="pag1.html">
                     <img src="imagens/p1/Capa.png" alt="" height="150px" width="150px">
                     <div class="txt">
-                        <h2 class="mude">Mini lorem</h2>
-                        <p class="mude">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, placeat repellendus quis obcaecati voluptatum veritatis?</p>
+                        <h2 class="mude">Novo Drip Among Us vira febre</h2>
+                        <p class="mude">Seja um tripulante fashionista e brilhe nas ruas com moda intergaláctica.</p>
                     </div>
                 </a></div>
 
@@ -72,13 +72,19 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam impedit repellendus quam eveniet velit nihil consectetur deleniti eos, beatae aut esse nulla totam earum praesentium nam culpa quis quos cum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquid voluptates placeat assumenda hic, culpa, deserunt in saepe laboriosam nihil cumque blanditiis quos minus repellendus odit vel fugiat atque. Eveniet.</p>
             </aside>
 
+
+
+
+
+
             <div id="adv">
-                <img src="imagens/ads/ad1.png" height="120px" width="120px" class="ads">
-                <h2>Memes no ifunny</h2>
-                <p>Venha conhecer os memes mais <strong>engraçados</strong>, <strong>originais</strong>, <strong>recentes</strong> e <strong>based</strong></p>
             </div>
         </div>
     </main>
+
+
+
+
     <footer></footer>
 
     <script>
@@ -89,6 +95,96 @@
 
     // ads -- 
     
+    var ad_element = document.getElementById('adv')
+        window.onload = trocaad();
+
+    function trocaad(){
+    let xad = Math.round(Math.random() * 4)
+    switch (xad) {
+        case 0:
+            let ad_h2 = document.createElement("h2")
+            ad_h2.innerText = "Memes no ifunny"
+            let ad_p = document.createElement("p")
+            ad_p.innerHTML = "Venha conhecer os memes mais <strong>engraçados</strong>, <strong>originais</strong>, <strong>recentes</strong> e <strong>based</strong>"
+            let ad_img = document.createElement("img")
+            ad_img.setAttribute("src", "imagens/ads/ad1.png");
+            ad_img.setAttribute("height","160px")
+            ad_img.setAttribute("width","160px")
+            ad_img.setAttribute("class","ads")
+
+            ad_element.appendChild(ad_img)
+            ad_element.appendChild(ad_h2)
+            ad_element.appendChild(ad_p)
+            break;
+        case 1:
+            
+        let ad_h22 = document.createElement("h2")
+            ad_h22.innerText = "Venha, Gabriel"
+            let ad_p2 = document.createElement("p")
+            ad_p2.innerHTML = "Venha,<strong>Gabriel</strong>. Venha jogar <strong>Among Us</strong> comigo."
+            let ad_img2 = document.createElement("img")
+            ad_img2.setAttribute("src", "imagens/ads/ad2.png");
+            ad_img2.setAttribute("height","160px")
+            ad_img2.setAttribute("width","160px")
+            ad_img2.setAttribute("class","ads")
+
+            ad_element.appendChild(ad_img2)
+            ad_element.appendChild(ad_h22)
+            ad_element.appendChild(ad_p2)
+            break;
+        case 2:
+        let ad_h23 = document.createElement("h2")
+            ad_h23.innerText = "Among Us Sulista"
+            let ad_p3 = document.createElement("p")
+            ad_p3.innerHTML = "Among Us <strong>Sulista</strong>."
+            let ad_img3 = document.createElement("img")
+            ad_img3.setAttribute("src", "imagens/ads/ad3.png");
+            ad_img3.setAttribute("height","160px")
+            ad_img3.setAttribute("width","160px")
+            ad_img3.setAttribute("class","ads")
+    
+            ad_element.appendChild(ad_img3)
+            ad_element.appendChild(ad_h23)
+            ad_element.appendChild(ad_p3)
+        
+            break;
+        case 3:
+        let ad_h24 = document.createElement("h2")
+            ad_h24.innerText = "Peitoral Suspeito"
+            let ad_p4 = document.createElement("p")
+            ad_p4.innerHTML = "Conheça o novo <strong>Sus</strong>plemento que vai deixar seu <strong>shape</strong> de <strong>matar</strong>"
+            let ad_img4 = document.createElement("img")
+            ad_img4.setAttribute("src", "imagens/ads/ad4.png");
+            ad_img4.setAttribute("height","160px")
+            ad_img4.setAttribute("width","160px")
+            ad_img4.setAttribute("class","ads")
+
+            ad_element.appendChild(ad_img4)
+            ad_element.appendChild(ad_h24)
+            ad_element.appendChild(ad_p4)
+            break;
+        case 4:
+        let ad_h25 = document.createElement("h2")
+            ad_h25.innerText = "Suspeitas Deliciosas"
+            let ad_p5 = document.createElement("p")
+            ad_p5.innerHTML = "Experimente as novas <strong>Impastas</strong> feitas pelos melhores chefes ta <strong>tripulação</strong>"
+            let ad_img5 = document.createElement("img")
+            ad_img5.setAttribute("src", "imagens/ads/ad5.png");
+            ad_img5.setAttribute("height","160px")
+            ad_img5.setAttribute("width","160px")
+            ad_img5.setAttribute("class","ads")
+
+            ad_element.appendChild(ad_img5)
+            ad_element.appendChild(ad_h25)
+            ad_element.appendChild(ad_p5)
+            break;
+            
+            break;
+    
+        default:
+            break;
+    }
+}
 
     </script>
 </body>

@@ -15,7 +15,6 @@ margin: 0px;
     --in-int-color: #2b2a2a;
     --nav-hover-color: #ffffff50;
     --shadow-color:white;
-
 }
 
 .light-theme{
@@ -25,8 +24,7 @@ margin: 0px;
     --font-color: rgb(0, 0, 0);
     --in-int-color: #dadada;
     --nav-hover-color: #20202050;
-    --shadow-color:black;
-
+    --shadow-color:rgb(0, 0, 0);
 }
 
 body {
@@ -89,70 +87,43 @@ nav a.hell:hover::after {
     content: '\00A0\L';
 }
 
-
-/*Principal*/
-
+/*Main*/
 
 main {
-    display: flex;
+    border: 5px solid var(--font-color);
     position: relative;
     min-width: 600px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    margin-top: 1px;
+    background-color: var(--in-color);
+    margin-top: 10px;
     margin-bottom: 7px;
-    border-radius: 0px 0px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 2px 2px 10px var(--shadow-color);
 }
 
 main h1 {
+    border: #dadada;
     text-align: center;
-    color: var(--font-color);
+    color: var(--font-color);   
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-div.busca {
-    min-width: 320px;
-    max-width: 700px;
-    margin: 0px 0px 0px 0%;
-    padding: 10px;
-    
-    border-radius: 7px;
-}
-
-div.busca p, div.busca h2 {
-    position: relative;
+main p {
     text-align: justify;
-}
-
-div.busca a {
-    display: block;
-    text-decoration: none;
-}
-
-div.paginas {
-    border-style: solid;
-    border: 4px;
-    border-color: black;
-    background-color: var(--in-color);
-    margin: 10px 0px;
-    border: 1px solid black;
-}
-div.paginas:hover {
-    background-color: var(--in-int-color);
-}
-
-div.paginas a{
-    display: flex;
-    flex-direction: row;
-}
-
-div.txt {
-    margin-top: 20px;
     color: var(--font-color);
-    text-decoration: none;
-    padding: 5px;
-    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    text-indent: 10px;
+    line-height: 30px;
 }
-/*aside*/
+img#capa {
+    margin: 0px 10px 0px 15px;
+    float: left;
+    position: static;
+}
 aside {
     max-width: 200px;
     background-color: rgb(255, 147, 147);
@@ -173,30 +144,4 @@ aside h1 {
 aside > img#awua {
     margin: 6px auto 0px 18px;
     border-radius: 7px;
-}
-
-/* ads */
-div#adv{
-    max-width: 195px;
-    background-color: #acff93;
-    padding: 10px;
-    margin-top: 5%;
-    margin-left: 40px;
-    margin-bottom: 20%;
-    border-color: #4ad121;
-    border-radius: 7px;
-    border-style:solid;
-    cursor: pointer;
-}
-
-img.ads {
-    margin: 0px auto 3px 17px;
-    border-radius: 7px; 
-}
-div#adv > h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-div#adv > p {
-    text-align: center;
 }
