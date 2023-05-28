@@ -167,6 +167,15 @@ aside p {
     text-align: justify;
     margin-bottom: 6px;
 }
+aside ul li {
+    text-align:left;
+    margin-bottom: 3px;
+    list-style: inside;
+}
+aside ul li span{
+    position: relative;
+    left: -5px;
+}
 aside h1 {
     color: black;
 }
